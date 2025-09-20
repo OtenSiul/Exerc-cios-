@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <link rel="stylesheet" href="./assets/css/estetica.css">
+    <script src="./assets/js/brain.js" defer></script>
+
+</head>
+
+<body>
+
+    <section class="container">
+
+        <div class="head-one">
+            <h1>Massa corporal</h1>
+        </div>
+
+        <div class="info-linhas">
+            <div>
+                <h1>Faixa de IMC</h1>
+                <ul>
+                    <li>Menor que 18,5</li>
+                    <li>18,5 até 24,9</li>
+                    <li>25 até 29,9</li>
+                    <li>30 até 34,9</li>
+                    <li>35 até 39,9</li>
+                    <li>40 até mais</li>
+                </ul>
+            </div>
+
+            <div>
+                <h1>Classificação</h1>
+                <ul>
+                    <li>Abaixo do peso</li>
+                    <li>Peso Normal</li>
+                    <li>Sobrepeso</li>
+                    <li>Obesidade l</li>
+                    <li>Obesidade Grau ll</li>
+                    <li>Obesidade Grau lll</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="body-one">
+            <h1>Seus Dados</h1>
+        </div>
+
+        <form class="dados">
+
+            <div class="entrada-dados-1">
+
+                <label for="altura">Sua altura:</label>
+
+                <input name="altura" id="altura" type="number" placeholder="Ex..: 170" min="50" max="250" step="1"
+                    required>
+
+            </div>
+
+            <div class="entrada-dado-2">
+
+                <label for="peso">Seu peso:</label>
+
+                <input name="peso" id="peso" type="number" min="30" step="1" placeholder="Ex...: 60." required>
+
+            </div>
+
+            <div class="botoes-envio">
+
+                <button class="sand" type="submit">Calcular</button>
+
+                <button class="corigi" type="reset">Corrigir</button>
+
+            </div>
+
+            <div class="result" aria-atomic="true" aria-live="polite">Resultado : Preencha os dados e clique em
+                calcular!</div>
+
+
+
+        </form>
+    </section>
+
+</body>
+
+</html>
